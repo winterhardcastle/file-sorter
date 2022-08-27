@@ -2,6 +2,7 @@ import os
 import shutil
 import time
 
+frequency = time.sleep(600)
 
 while True:
     folder_path = r"C:\Users\Winter Hardcastle\Downloads/"
@@ -56,4 +57,4 @@ while True:
             if f not in blacklisted_folders:
                 shutil.move(folder_path + f, folder_path + "Folders/" + f)
 
-    time.sleep(600)
+    time.sleep(frequency)
